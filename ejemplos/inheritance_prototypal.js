@@ -14,7 +14,7 @@ if (ACTIVE_INHERITANCE_PROTOTYPAL) {
       return this.nombre;
     }
   };
-  
+
   // creo un objeto nuevo en base a las caracteristicas de persona
   alumno = Object.create(persona);
   alumno.nombre = 'Martin';
@@ -22,4 +22,5 @@ if (ACTIVE_INHERITANCE_PROTOTYPAL) {
   alumno.miLegajoEs = function () {
     console.log('Mi legajo es '+this.legajo);
   };
+  persona.miNombreEs('hola')
 }

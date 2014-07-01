@@ -1,4 +1,4 @@
-var _extends, 
+var _extends,
   Persona,
   Alumno,
   personaInst,
@@ -15,7 +15,7 @@ if (ACTIVE_INHERITANCE_PSEUDOCLASSICAL) {
     child.prototype = Object.create(parent.prototype);
     child.prototype.constructor = child;
   }
-  
+
   // Padre class constructor
   Persona = function Persona(nombre) {
     this.nombre = nombre || 'batman';
@@ -32,7 +32,7 @@ if (ACTIVE_INHERITANCE_PSEUDOCLASSICAL) {
     this.legajo = legajo || '0000';
   };
   _extends(Alumno, Persona);
-  
+
   // Alumno class method
   Alumno.prototype.miLegajoEs = function () {
     console.log('Mi legajo es '+this.legajo);
@@ -40,7 +40,7 @@ if (ACTIVE_INHERITANCE_PSEUDOCLASSICAL) {
 
   // Instancia de Persona
   var personaInst = new Persona();
-  
+
   // Instancia de Alumno
   var alumnoInst = new Alumno(8502, 'Martin');
 }
